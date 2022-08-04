@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="csscalculator.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+
+<body>
+<div>
+        
+            <input type="text" class="results" id="result"/>
+
+        <table class="table">
+           
+            <tr>
+                <td><button class="symbol" onclick="Clear()">C</td>
+                <td><button class="operators" onclick="view('x')">x</button></td>
+                <td><button class="operators" onclick="view('/')">&divide;</button></td>
+                <td><button class="symbol" onclick="deLete()"></button></td>
+            </tr>
+            
+            <tr>
+                <td><button class="numbers" value='7' onclick="view('7')" >7</button></td>
+                <td><button class="numbers" value='8' onclick="view('8')">8</button></td>
+                <td><button class="numbers" value='9' onclick="view('9')">9</button></td>
+                <td><button class="operators" onclick="view('-')">-</button></td>
+            </tr>
+
+            <tr>
+                <td><button class="numbers" value='4' onclick="view('4')">4</button></td>
+                <td><button class="numbers" value='5' onclick="view('5')">5</button></td>
+                <td><button class="numbers" value='6' onclick="view('6')">6</button></td>
+                <td><button class="operators" onclick="view('+')">+</button></td>
+            </tr>
+
+            <tr>
+                <td><button class="numbers" value='3' onclick="view('3')">3</button></td>
+                <td><button class="numbers" value='2' onclick="view('2')">2</button></td>
+                <td><button class="numbers" value='1' onclick="view('1')">1</button></td>
+                <td rowspan="2"><button class="equal" onclick="compute()">=</td>
+            </tr>
+            
+            <tr>
+                <td><button class="symbol" onclick="view('(')">(</button></td>
+                <td><button class="numbers" value='0'  onclick="view('0')">0</button></td>
+                <td><button class="symbol" onclick="view(')')">)</button></td>
+                
+            </tr>
+
+        </table>
+   
+    </div>
+    <script src="jscalc.js"></script>
+    
+
+
+
+</body>
